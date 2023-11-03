@@ -1,12 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, StatusBar } from 'react-native';
+import StackNavigator from './src/stackNagiator';
+import { colors } from './src/constants/colors';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar backgroundColor={colors.black} />
+      <StackNavigator />
+    </>
   );
 }
 
